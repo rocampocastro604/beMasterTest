@@ -23,25 +23,14 @@ function Header() {
           height={200}
           className="cursor-pointer object-contain"
         />
-        <ul className="hidden space-x-4 md:flex">
-          <li className="headerLink">Home</li>
-          <li className="headerLink">TV Shows</li>
-          <li className="headerLink">Movies</li>
-          <li className="headerLink">New and Popular</li>
-          <li className="headerLink">My List</li>
-        </ul>
       </div>
 
-      <div className='flex items-center space-x-4 text-sm font-light'>
-        <SearchIcon className="hidden sm:inline h-6 w-6"/>
-        <p className='hiddn lg:inline'>Kids</p>
-        <BellIcon className='h-6 w-6'/>
-        <Link href='/account'>
-        <img
-            src="https://rb.gy/g1pwyx"
-            alt=""
-            className="cursor-pointer rounded"
-          />
+      <div className="flex items-center space-x-4 text-sm font-light">
+        <SearchIcon className="sm h-6 w-6 sm:inline" />
+        <BellIcon className="hidden lg:inline h-6 w-6" />
+        <p className="hidden lg:inline">My List</p>
+        <Link href="/account">
+          Account
         </Link>
       </div>
     </header>
