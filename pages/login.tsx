@@ -21,7 +21,7 @@ function Login() {
   return (
     <div className="relative flex h-screen w-screen flex-col md:items-center md:justify-center">
       <Head>
-        <title>Netflix</title>
+        <title>Login - BeMaster</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="absolute left-2 top-1 h-20 w-44 cursor-pointer md:left-8 md:top-4">
