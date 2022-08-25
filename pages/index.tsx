@@ -5,6 +5,9 @@ import Header from "../components/Header";
 import ContentCategory from "../components/ContentCategory";
 import { Movie } from "../typings";
 import requests from "../utils/requests";
+import { useRecoilValue } from "recoil";
+import { modalState } from "../atoms/modalAtom";
+import ContentDetails from "../components/ContentDetails";
 
 interface Props {
   netflixOriginals: Movie[];
@@ -25,6 +28,7 @@ const Home = ({
   topRated,
   trendingNow,
 }: Props) => {
+  const showModal = useRecoilValue(modalState)
   return (
     <div className="relative h-screen bg-gradient-to-b lg:h-[140vh]">
       <Head>
@@ -44,7 +48,7 @@ const Home = ({
           <ContentCategory title="Documentaries" movies={documentaries} />
         </section>
       </main>
-      {/* Modal */}
+      {showModal && <ContentDetails />}
     </div>
   );
 };
