@@ -49,7 +49,7 @@ function Login() {
           </label>
         </div>
         <button
-          className="w-full rounded bg-[#E50914] py-3 font-semibold"
+          className="w-full rounded bg-[#C19656] py-3 font-semibold"
           type="submit" onClick={() => setLogin(true)}
         >
           Log In

@@ -33,7 +33,7 @@ function Header() {
         <Link href="/account">
           Account
         </Link>
-        <button className="hidden lg:inline" onClick={logout}>Logout</button>
+        <button className="lg:inline" onClick={logout}>Logout</button>
       </div>
     </header>
   )
